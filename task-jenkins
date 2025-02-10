@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Hello') {
+        stage('script') {
             steps {
-                echo "Hello duniya??"
+                sh '''
+                    #!/bin/bash
+ls -l                        
+chown +x taskjenkins
+ls -l                        
+
+                    '''
             }
         }
     }
