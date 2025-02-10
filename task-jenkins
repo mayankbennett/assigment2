@@ -5,9 +5,7 @@ pipeline {
             steps {
                 sh '''
                     #!/bin/bash
-ls -l                        
-mkdir newfile
-ls -l                        
+git clone https://github.com/mayankbennett/tothenew
 
                     '''
             }
