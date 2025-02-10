@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                     #!/bin/bash
 ls -l                        
-chown +x taskjenkins
+mkdir newfile
 ls -l                        
 
                     '''
